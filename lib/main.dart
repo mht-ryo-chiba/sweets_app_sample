@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sweets_app_sample/config/app_routes.dart';
+import 'package:sweets_app_sample/ui/atoms/app_theme.dart';
 import 'package:sweets_app_sample/ui/pages/top.dart';
 
 void main() {
@@ -15,9 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'sweets_app',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: AppTheme().style(),
       home: const Top(),
       routes: AppRoutes().routeList(),
     );
