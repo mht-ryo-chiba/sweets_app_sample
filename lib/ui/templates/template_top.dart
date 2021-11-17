@@ -24,9 +24,17 @@ class TemplateTop extends StatelessWidget {
                 onPressed: () {
                   viewModel.toTemplateDetail(Pages.appColorsTemplate.routeName);
                 },
-                child: const Text('AppColor'),
+                child: Text(Pages.appColorsTemplate.name),
               ),
-              const SizedBox(height: 16)
+              const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () {
+                  viewModel
+                      .toTemplateDetail(Pages.appTextStyleTemplate.routeName);
+                },
+                child: Text(Pages.appTextStyleTemplate.name),
+              ),
+              const SizedBox(height: 16),
             ],
           ),
         ),

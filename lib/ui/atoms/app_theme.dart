@@ -7,6 +7,7 @@ class AppTheme {
       appBarTheme: const AppBarTheme(
         backgroundColor: AppColors.primary,
       ),
+      fontFamily: 'Noto Sans JP',
       brightness: Brightness.light,
     );
   }
