@@ -3,6 +3,7 @@ import 'package:sweets_app_sample/config/app_config.dart';
 import 'package:sweets_app_sample/model/route_data_model.dart';
 import 'package:sweets_app_sample/ui/pages/top.dart';
 import 'package:sweets_app_sample/ui/templates/app_colors_template.dart';
+import 'package:sweets_app_sample/ui/templates/app_images_template.dart';
 import 'package:sweets_app_sample/ui/templates/app_text_styles_template.dart';
 import 'package:sweets_app_sample/ui/templates/template_top.dart';
 
@@ -32,6 +33,12 @@ class AppRoutes {
       isDebug: true,
       widgetBuilder: (BuildContext context) => const AppTextStyleTemplate(),
     ),
+    RouteDataModel(
+      pageName: Pages.appImagesTemplate.name,
+      routeName: Pages.appImagesTemplate.routeName,
+      isDebug: true,
+      widgetBuilder: (BuildContext context) => const AppImagesTemplate(),
+    ),
   ];
 
   Map<String, Widget Function(BuildContext)> routeList() {
@@ -59,6 +66,7 @@ enum Pages {
   templateTop,
   appColorsTemplate,
   appTextStyleTemplate,
+  appImagesTemplate,
 }
 
 extension PageNameExtension on Pages {
@@ -67,6 +75,7 @@ extension PageNameExtension on Pages {
     Pages.templateTop: 'テンプレートトップ',
     Pages.appColorsTemplate: 'カラーテンプレート',
     Pages.appTextStyleTemplate: 'テキストスタイルテンプレート',
+    Pages.appImagesTemplate: '画像テンプレート',
   };
 
   static final rootNames = {
@@ -74,6 +83,7 @@ extension PageNameExtension on Pages {
     Pages.templateTop: '/templateTop',
     Pages.appColorsTemplate: '/appColorsTemplate',
     Pages.appTextStyleTemplate: '/appTextStyleTemplate',
+    Pages.appImagesTemplate: '/appImagesTemplate',
   };
 
   String get routeName => rootNames[this] ?? '';

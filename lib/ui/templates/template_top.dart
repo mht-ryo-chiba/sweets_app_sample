@@ -35,6 +35,13 @@ class TemplateTop extends StatelessWidget {
                 child: Text(Pages.appTextStyleTemplate.name),
               ),
               const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () {
+                  viewModel.toTemplateDetail(Pages.appImagesTemplate.routeName);
+                },
+                child: Text(Pages.appImagesTemplate.name),
+              ),
+              const SizedBox(height: 16),
             ],
           ),
         ),
