@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sweets_app_sample/config/app_config.dart';
 import 'package:sweets_app_sample/model/route_data_model.dart';
 import 'package:sweets_app_sample/ui/pages/top.dart';
+import 'package:sweets_app_sample/ui/templates/app_colors_template.dart';
+import 'package:sweets_app_sample/ui/templates/template_top.dart';
 
 class AppRoutes {
   final List<RouteDataModel> _routeList = [
@@ -9,6 +11,19 @@ class AppRoutes {
       pageName: Pages.top.name,
       routeName: Pages.top.routeName,
       widgetBuilder: (BuildContext context) => const Top(),
+    ),
+    // デバッグ用
+    RouteDataModel(
+      pageName: Pages.templateTop.name,
+      routeName: Pages.templateTop.routeName,
+      isDebug: true,
+      widgetBuilder: (BuildContext context) => const TemplateTop(),
+    ),
+    RouteDataModel(
+      pageName: Pages.appColorsTemplate.name,
+      routeName: Pages.appColorsTemplate.routeName,
+      isDebug: true,
+      widgetBuilder: (BuildContext context) => const AppColorsTemplate(),
     ),
   ];
 
@@ -34,15 +49,21 @@ class AppRoutes {
 // 以下ページ一覧設定
 enum Pages {
   top,
+  templateTop,
+  appColorsTemplate,
 }
 
 extension PageNameExtension on Pages {
   static final names = {
     Pages.top: 'トップページ',
+    Pages.templateTop: 'テンプレートトップ',
+    Pages.appColorsTemplate: 'カラーテンプレート',
   };
 
   static final rootNames = {
     Pages.top: '/top',
+    Pages.templateTop: '/templateTop',
+    Pages.appColorsTemplate: '/appColorsTemplate'
   };
 
   String get routeName => rootNames[this] ?? '';
