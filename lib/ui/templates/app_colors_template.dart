@@ -98,7 +98,7 @@ class AppColorsTemplate extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               height: 24,
               alignment: Alignment.center,
-              color: AppColors.textBtnWhite,
+              color: AppColors.textButtonWhite,
               child: const Text(
                 'textBtnWhite',
                 textAlign: TextAlign.center,
