@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sweets_app_sample/config/app_config.dart';
+import 'package:sweets_app_sample/ui/atoms/app_colors.dart';
+import 'package:sweets_app_sample/viewmodel/top_view_mode.dart';
 
 class Top extends StatelessWidget {
   const Top({Key? key}) : super(key: key);
@@ -7,6 +10,8 @@ class Top extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // initialize getX Controller
+    final viewModel = Get.put<TopViewModelInterface>(TopViewModel.instance);
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('sweets_app'),
@@ -17,9 +22,10 @@ class Top extends StatelessWidget {
       // デバッグ時のみフローティングボタンを表示
       floatingActionButton: AppConfig().isRelease()
           ? null
-          : const FloatingActionButton(
-              onPressed: null,
-              child: Icon(Icons.adb),
+          : FloatingActionButton(
+              onPressed: viewModel.toTemplate,
+              backgroundColor: AppColors.secondary,
+              child: const Icon(Icons.adb),
             ),
     );
   }
