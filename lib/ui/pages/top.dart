@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sweets_app_sample/config/app_config.dart';
+import 'package:sweets_app_sample/ui/atoms/app_colors.dart';
 import 'package:sweets_app_sample/viewmodel/top_view_mode.dart';
 
 class Top extends StatelessWidget {
@@ -23,6 +24,7 @@ class Top extends StatelessWidget {
           ? null
           : FloatingActionButton(
               onPressed: viewModel.toTemplate,
+              backgroundColor: AppColors.secondary,
               child: const Icon(Icons.adb),
             ),
     );
