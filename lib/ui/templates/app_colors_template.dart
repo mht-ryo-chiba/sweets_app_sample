@@ -18,6 +18,7 @@ class AppColorsTemplate extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width,
               height: 24,
+              alignment: Alignment.center,
               color: AppColors.primary,
               child: const Text(
                 'primary',
@@ -28,6 +29,7 @@ class AppColorsTemplate extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width,
               height: 24,
+              alignment: Alignment.center,
               color: AppColors.secondary,
               child: const Text(
                 'secondary',
@@ -38,6 +40,7 @@ class AppColorsTemplate extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width,
               height: 24,
+              alignment: Alignment.center,
               color: AppColors.disable,
               child: const Text(
                 'disable',
@@ -48,6 +51,7 @@ class AppColorsTemplate extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width,
               height: 24,
+              alignment: Alignment.center,
               color: AppColors.bgWhite,
               child: const Text(
                 'bgWhite',
@@ -58,6 +62,7 @@ class AppColorsTemplate extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width,
               height: 24,
+              alignment: Alignment.center,
               color: AppColors.stroke,
               child: const Text(
                 'stroke',
@@ -68,6 +73,7 @@ class AppColorsTemplate extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width,
               height: 24,
+              alignment: Alignment.center,
               color: AppColors.textBlack,
               child: const Text(
                 'textBlack',
@@ -79,6 +85,7 @@ class AppColorsTemplate extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width,
               height: 24,
+              alignment: Alignment.center,
               color: AppColors.textGray,
               child: const Text(
                 'textGray',
@@ -90,6 +97,7 @@ class AppColorsTemplate extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width,
               height: 24,
+              alignment: Alignment.center,
               color: AppColors.textBtnWhite,
               child: const Text(
                 'textBtnWhite',
@@ -100,6 +108,7 @@ class AppColorsTemplate extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width,
               height: 24,
+              alignment: Alignment.center,
               color: AppColors.textButton,
               child: const Text(
                 'textButton',
