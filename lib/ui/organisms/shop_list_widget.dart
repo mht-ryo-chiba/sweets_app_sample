@@ -19,47 +19,44 @@ class ShopListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.all(AppSizeList.mediumSize),
-      child: InkWell(
-        onTap: tapFunction,
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            AngleCircleIconImage(
-              image: Image.network(
-                src,
-                fit: BoxFit.cover,
-              ),
+    return InkWell(
+      onTap: tapFunction,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          AngleCircleIconImage(
+            image: Image.network(
+              src,
+              fit: BoxFit.cover,
             ),
-            Flexible(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: AppSizeList.mediumSize),
-                    child: Text(
-                      shopName,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTextStyles.titleText,
-                    ),
+          ),
+          Flexible(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: AppSizeList.mediumSize),
+                  child: Text(
+                    shopName,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTextStyles.titleText,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: AppSizeList.smallSize),
-                    child: Text(
-                      shopAddress,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTextStyles.bodyText,
-                    ),
-                  )
-                ],
-              ),
-            )
-          ],
-        ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: AppSizeList.smallSize),
+                  child: Text(
+                    shopAddress,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTextStyles.bodyText,
+                  ),
+                )
+              ],
+            ),
+          )
+        ],
       ),
     );
   }
