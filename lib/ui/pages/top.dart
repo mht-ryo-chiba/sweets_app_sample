@@ -21,26 +21,27 @@ class Top extends StatelessWidget {
       body: GetBuilder<TopViewModel>(
           init: viewModel,
           builder: (_) {
-            return ListView.separated(
-              itemCount: viewModel.shopDataList.shopList.length,
-              separatorBuilder: (context, index) {
-                return const Divider(height: 1);
-              },
-              itemBuilder: (BuildContext context, int index) {
-                return ShopListWidget(
-                  shopName:
-                      viewModel.shopDataList
-                        .shopList[index].shopName,
-                  shopAddress:
-                      viewModel.shopDataList
-                          .shopList[index].shopAddress,
-                  src:
-                      viewModel.shopDataList
-                          .shopList[index].imageSrc,
-                  tapFunction: () {},
-                );
-              },
-            );
+            if (viewModel.shopDataList.shopList.length.isGreaterThan(0)) {
+              return ListView.separated(
+                itemCount: viewModel.shopDataList.shopList.length,
+                separatorBuilder: (context, index) {
+                  return const Divider(height: 1);
+                },
+                itemBuilder: (BuildContext context, int index) {
+                  return ShopListWidget(
+                    shopName: viewModel.shopDataList.shopList[index].shopName,
+                    shopAddress:
+                        viewModel.shopDataList.shopList[index].shopAddress,
+                    src: viewModel.shopDataList.shopList[index].imageSrc,
+                    tapFunction: () {},
+                  );
+                },
+              );
+            } else {
+              return const Center(
+                child: CircularProgressIndicator(),
+              );
+            }
           }),
       // デバッグ時のみフローティングボタンを表示
       floatingActionButton: AppConfig().isRelease()
