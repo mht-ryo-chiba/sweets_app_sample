@@ -13,5 +13,5 @@ class AppSizeList {
   // size
   static const double largeSize = 24;
   static const double mediumSize = 16;
-  static const double smallSize = 4;
+  static const double smallSize = 8;
 }

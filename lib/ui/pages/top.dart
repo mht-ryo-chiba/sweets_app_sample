@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sweets_app_sample/config/app_config.dart';
 import 'package:sweets_app_sample/ui/atoms/app_colors.dart';
+import 'package:sweets_app_sample/ui/organisms/shop_list_widget.dart';
 import 'package:sweets_app_sample/viewmodel/top_view_mode.dart';
 
 class Top extends StatelessWidget {
@@ -10,15 +11,38 @@ class Top extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // initialize getX Controller
-    final viewModel = Get.put<TopViewModelInterface>(TopViewModel.instance);
+    final viewModel = Get.put<TopViewModel>(TopViewModel.instance);
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('sweets_app'),
+        centerTitle: true,
+        title: const Text('sweets倶楽部'),
       ),
-      body: const Center(
-        child: Text('TOP Page'),
-      ),
+      body: GetBuilder<TopViewModel>(
+          init: viewModel,
+          builder: (_) {
+            if (viewModel.shopDataList.shopList.length.isGreaterThan(0)) {
+              return ListView.separated(
+                itemCount: viewModel.shopDataList.shopList.length,
+                separatorBuilder: (context, index) {
+                  return const Divider(height: 1);
+                },
+                itemBuilder: (BuildContext context, int index) {
+                  return ShopListWidget(
+                    shopName: viewModel.shopDataList.shopList[index].shopName,
+                    shopAddress:
+                        viewModel.shopDataList.shopList[index].shopAddress,
+                    src: viewModel.shopDataList.shopList[index].imageSrc,
+                    tapFunction: () {},
+                  );
+                },
+              );
+            } else {
+              return const Center(
+                child: CircularProgressIndicator(),
+              );
+            }
+          }),
       // デバッグ時のみフローティングボタンを表示
       floatingActionButton: AppConfig().isRelease()
           ? null

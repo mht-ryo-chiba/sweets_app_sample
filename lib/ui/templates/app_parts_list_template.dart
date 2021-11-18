@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sweets_app_sample/config/app_routes.dart';
 import 'package:sweets_app_sample/ui/atoms/app_text_styles.dart';
+import 'package:sweets_app_sample/ui/organisms/comment_detail_widget.dart';
 import 'package:sweets_app_sample/ui/organisms/shop_list_widget.dart';
 
 class AppPartsListTemplate extends StatelessWidget {
@@ -33,6 +34,26 @@ class AppPartsListTemplate extends StatelessWidget {
               tapFunction: () {},
             ),
             const Divider(color: Colors.black),
+            const SizedBox(height: 16),
+            const Text(
+              'CommentDetailWidget',
+              style: AppTextStyles.titleText,
+            ),
+            CommentDetailWidget(
+              userName: '山田太郎',
+              createString: '1時間前',
+              comment: 'ここにはユーザーのコメントが入ります',
+              src: 'https://placehold.jp/500x500.png',
+              tapFunction: () {},
+            ),
+            CommentDetailWidget(
+              userName: '長い名前です長い名前です長い名前です長い名前です長い名前です',
+              createString: '1時間前',
+              comment:
+                  'コメントを全文表示、長い場合は複数行にする\nサンプルテキストサンプルテキストサンプルテキストサンプルテキスト',
+              src: 'https://placehold.jp/500x500.png',
+              tapFunction: () {},
+            )
           ],
         ),
       ),
