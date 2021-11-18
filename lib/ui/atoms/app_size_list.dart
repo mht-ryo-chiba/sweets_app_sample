@@ -13,4 +13,6 @@ class AppSizeList {
   // size
   static const double smallSize = 16;
   static const double mediumSize = 24;
+  static const double largeSize = 48;
+  static const double smallTextSpace = 10;
 }
