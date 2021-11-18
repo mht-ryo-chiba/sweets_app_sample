@@ -10,7 +10,7 @@ class AngleCircleIconImage extends StatelessWidget {
     return Container(
       width: AppSizeList.mediumImageSize,
       height: AppSizeList.mediumImageSize,
-      margin: const EdgeInsets.all(AppSizeList.smallSize),
+      margin: const EdgeInsets.all(AppSizeList.mediumSize),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(AppSizeList.circleRadius),
         child: image,

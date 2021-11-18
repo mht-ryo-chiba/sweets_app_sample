@@ -20,7 +20,7 @@ class ShopListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: const EdgeInsets.all(AppSizeList.smallSize),
+      margin: const EdgeInsets.all(AppSizeList.mediumSize),
       child: InkWell(
         onTap: tapFunction,
         child: Row(
@@ -46,11 +46,14 @@ class ShopListWidget extends StatelessWidget {
                       style: AppTextStyles.titleText,
                     ),
                   ),
-                  Text(
-                    shopAddress,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTextStyles.bodyText,
+                  Padding(
+                    padding: const EdgeInsets.only(top: AppSizeList.smallSize),
+                    child: Text(
+                      shopAddress,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTextStyles.bodyText,
+                    ),
                   )
                 ],
               ),
