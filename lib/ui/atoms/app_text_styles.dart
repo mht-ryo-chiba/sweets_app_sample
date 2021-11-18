@@ -5,37 +5,37 @@ import 'app_colors.dart';
 
 class AppTextStyles {
   static const TextStyle titleText = TextStyle(
-    fontSize: AppSizelist.largeTextSize,
+    fontSize: AppSizeList.largeTextSize,
     fontWeight: FontWeight.w600,
     color: AppColors.textBlack,
   );
 
   static const TextStyle usernameText = TextStyle(
-    fontSize: AppSizelist.mediumTextSize,
+    fontSize: AppSizeList.mediumTextSize,
     fontWeight: FontWeight.w600,
     color: AppColors.textBlack,
   );
 
   static const TextStyle bodyText = TextStyle(
-    fontSize: AppSizelist.mediumTextSize,
+    fontSize: AppSizeList.mediumTextSize,
     fontWeight: FontWeight.w300,
     color: AppColors.textBlack,
   );
 
   static const TextStyle subTitleText = TextStyle(
-    fontSize: AppSizelist.smallTextSize,
+    fontSize: AppSizeList.smallTextSize,
     fontWeight: FontWeight.w600,
     color: AppColors.textGray,
   );
 
   static const TextStyle timeText = TextStyle(
-    fontSize: AppSizelist.smallTextSize,
+    fontSize: AppSizeList.smallTextSize,
     fontWeight: FontWeight.w300,
     color: AppColors.textGray,
   );
 
   static const TextStyle textButton = TextStyle(
-    fontSize: AppSizelist.smallTextSize,
+    fontSize: AppSizeList.smallTextSize,
     fontWeight: FontWeight.w600,
     color: AppColors.textButton,
   );
