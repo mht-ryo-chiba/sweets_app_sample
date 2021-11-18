@@ -4,13 +4,13 @@ import 'package:sweets_app_sample/ui/atoms/app_text_styles.dart';
 import 'package:sweets_app_sample/ui/molecules/angle_circle_icon_image.dart';
 
 class ShopListWidget extends StatelessWidget {
-  const ShopListWidget(
-      {Key? key,
-      required this.src,
-      required this.shopName,
-      required this.shopAddress,
-      required this.tapFunction})
-      : super(key: key);
+  const ShopListWidget({
+    Key? key,
+    required this.src,
+    required this.shopName,
+    required this.shopAddress,
+    required this.tapFunction,
+  }) : super(key: key);
 
   final String src;
   final String shopName;
