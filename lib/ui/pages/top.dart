@@ -33,7 +33,10 @@ class Top extends StatelessWidget {
                     shopAddress:
                         viewModel.shopDataList.shopList[index].shopAddress,
                     src: viewModel.shopDataList.shopList[index].imageSrc,
-                    tapFunction: () {},
+                    tapFunction: () {
+                      viewModel
+                          .toShopDetail(viewModel.shopDataList.shopList[index]);
+                    },
                   );
                 },
               );
