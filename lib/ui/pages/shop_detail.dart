@@ -21,6 +21,17 @@ class ShopDetail extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(shopDetail.shopName),
+        leading: Builder(
+          builder: (BuildContext context) {
+            return IconButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              icon: const Icon(Icons.arrow_back_ios),
+            );
+          },
+        ),
+        actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.share))],
       ),
       body: SingleChildScrollView(
         child: Column(
