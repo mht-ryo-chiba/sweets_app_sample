@@ -8,9 +8,9 @@ class CircleIconImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: AppSizelist.smallImageSize,
-      height: AppSizelist.smallImageSize,
-      margin: const EdgeInsets.all(AppSizelist.smallSize),
+      width: AppSizeList.smallImageSize,
+      height: AppSizeList.smallImageSize,
+      margin: const EdgeInsets.all(AppSizeList.smallSize),
       child: ClipOval(
         child: image,
       ),

@@ -10,11 +10,11 @@ class AngleCircleLargeImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      margin: const EdgeInsets.all(AppSizelist.smallSize),
+      margin: const EdgeInsets.all(AppSizeList.smallSize),
       child: AspectRatio(
-        aspectRatio: AppSizelist.largeImageAspect,
+        aspectRatio: AppSizeList.largeImageAspect,
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(AppSizelist.circleRadius),
+          borderRadius: BorderRadius.circular(AppSizeList.circleRadius),
           child: image,
         ),
       ),

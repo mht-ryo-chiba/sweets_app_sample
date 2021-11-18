@@ -24,7 +24,7 @@ class AppImagesTemplate extends StatelessWidget {
             ),
             CircleIconImage(
               image: Image.asset(
-                'assets/images/chiba_sample.jpg',
+                'assets/images/img_profile_chiba.jpg',
                 fit: BoxFit.cover,
               ),
             ),
@@ -45,7 +45,7 @@ class AppImagesTemplate extends StatelessWidget {
             ),
             AngleCircleIconImage(
               image: Image.asset(
-                'assets/images/chiba_sample.jpg',
+                'assets/images/img_profile_chiba.jpg',
                 fit: BoxFit.cover,
               ),
             ),
@@ -66,7 +66,7 @@ class AppImagesTemplate extends StatelessWidget {
             ),
             AngleCircleLargeImage(
               image: Image.asset(
-                'assets/images/chiba_sample.jpg',
+                'assets/images/img_profile_chiba.jpg',
                 fit: BoxFit.cover,
               ),
             ),

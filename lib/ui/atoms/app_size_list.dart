@@ -1,4 +1,4 @@
-class AppSizelist {
+class AppSizeList {
   // text size
   static const double largeTextSize = 20;
   static const double mediumTextSize = 16;
@@ -10,7 +10,7 @@ class AppSizelist {
   static const double largeImageAspect = 3 / 2;
   static const double circleRadius = 14;
 
-  // maegin
+  // size
   static const double smallSize = 16;
   static const double mediumSize = 24;
 }
