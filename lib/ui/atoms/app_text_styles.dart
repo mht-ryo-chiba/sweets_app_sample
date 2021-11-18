@@ -6,13 +6,13 @@ import 'app_colors.dart';
 class AppTextStyles {
   static const TextStyle titleText = TextStyle(
     fontSize: AppSizeList.largeTextSize,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.bold,
     color: AppColors.textBlack,
   );
 
   static const TextStyle usernameText = TextStyle(
     fontSize: AppSizeList.mediumTextSize,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.bold,
     color: AppColors.textBlack,
   );
 
@@ -24,7 +24,7 @@ class AppTextStyles {
 
   static const TextStyle subTitleText = TextStyle(
     fontSize: AppSizeList.smallTextSize,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.bold,
     color: AppColors.textGray,
   );
 
@@ -36,7 +36,7 @@ class AppTextStyles {
 
   static const TextStyle textButton = TextStyle(
     fontSize: AppSizeList.smallTextSize,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.bold,
     color: AppColors.textButton,
   );
 }
