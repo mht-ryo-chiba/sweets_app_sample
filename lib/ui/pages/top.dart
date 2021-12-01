@@ -30,10 +30,12 @@ class Top extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   return ShopListWidget(
                     shopName: viewModel.shopDataList.shopList[index].shopName,
-                    shopAddress: viewModel.shopDataList.shopList[index].shopAddress,
+                    shopAddress:
+                        viewModel.shopDataList.shopList[index].shopAddress,
                     src: viewModel.shopDataList.shopList[index].imageSrc,
                     tapFunction: () {
-                      viewModel.toShopDetail(viewModel.shopDataList.shopList[index]);
+                      viewModel
+                          .toShopDetail(viewModel.shopDataList.shopList[index]);
                     },
                   );
                 },
