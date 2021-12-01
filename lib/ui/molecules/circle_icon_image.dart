@@ -10,7 +10,11 @@ class CircleIconImage extends StatelessWidget {
     return Container(
       width: AppSizeList.smallImageSize,
       height: AppSizeList.smallImageSize,
-      margin: const EdgeInsets.all(AppSizeList.mediumSize),
+      margin: const EdgeInsets.only(
+          top: AppSizeList.mediumSize,
+          right: AppSizeList.smallSize,
+          bottom: AppSizeList.mediumSize,
+          left: AppSizeList.mediumSize),
       child: ClipOval(
         child: image,
       ),
