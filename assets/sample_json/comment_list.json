@@ -1,0 +1,25 @@
+{
+  "comment_list": [
+    {
+      "id": 0,
+      "user_name": "チバード",
+      "create_string": "1時間前",
+      "comment": "自由が丘でふわふわで美味しいパンケーキのお店といったらここ!!!!\n駅から徒歩10分くらいで辿り着けます。\nぜひ行ってみてください。",
+      "image_src": "https://www.doc.mht-code.com/sweets-app/chibird.png"
+    },
+    {
+      "id": 1,
+      "user_name": "ちば",
+      "create_string": "３時間前",
+      "comment": "パンケーキを求めて自由が丘へ。\n専門店ということもありパンケーキだけでメニューが豊富です！\n近くに行った際はぜひ寄ってみてください！",
+      "image_src": "https://www.doc.mht-code.com/sweets-app/chiba_sample.jpg"
+    },
+    {
+      "id": 2,
+      "user_name": "千葉",
+      "create_string": "1週間前",
+      "comment": "食べ放題と聞き、何枚食べれるかチャレンジしに行ってきました！\n結果は5枚！\n薄いように見えて結構重量があります\nメープルつけ放題というのもありがたいので是非チャレンジしに行ってください！",
+      "image_src": "https://www.doc.mht-code.com/sweets-app/account_circle.png"
+    }
+  ]
+}

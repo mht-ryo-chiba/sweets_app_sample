@@ -1,0 +1,68 @@
+{
+  "shop_list": [
+    {
+      "id": 0,
+      "shop_name": "RasaRuka",
+      "shop_open_time": "09:30 - 20:00",
+      "shop_phone_no": "03-6459-5791",
+      "shop_address": "東京都目黒区自由が丘１丁目20-19",
+      "image_src": "https://www.doc.mht-code.com/sweets-app/rasaruka.jpg"
+    },
+    {
+      "id": 1,
+      "shop_name": "さぼうる",
+      "shop_open_time": "10:00 - 22:00",
+      "shop_phone_no": "03-3291-8404",
+      "shop_address": "東京都千代田区神田神保町1-11",
+      "image_src": "https://www.doc.mht-code.com/sweets-app/usaboru.jpg"
+    },
+    {
+      "id": 2,
+      "shop_name": "DIXANS九段下",
+      "shop_open_time": "08:00 - 18:00",
+      "shop_phone_no": "03-6272-9952",
+      "shop_address": "東京都 千代田区 九段北 1-2-12 九段下プラレールビル 1F",
+      "image_src": "https://www.doc.mht-code.com/sweets-app/DIXANS.jpg"
+    },
+    {
+      "id": 3,
+      "shop_name": "ミモザ",
+      "shop_open_time": "08:00 - 17:00",
+      "shop_phone_no": "03-3874-2933",
+      "shop_address": "東京都台東区浅草4-38-6",
+      "image_src": "https://www.doc.mht-code.com/sweets-app/mimoza.jpg"
+    },
+    {
+      "id": 4,
+      "shop_name": "寿清庵",
+      "shop_open_time": "12:00 - 17:00",
+      "shop_phone_no": "-",
+      "shop_address": "東京都台東区浅草2-7-21",
+      "image_src": "https://www.doc.mht-code.com/sweets-app/kotobiki.jpg"
+    },
+    {
+      "id": 5,
+      "shop_name": "Urth Caffe 東急プラザ 表参道原宿店",
+      "shop_open_time": "11:00 - 20:00",
+      "shop_phone_no": "03-6434-5157",
+      "shop_address": "東京都渋谷区神宮前４丁目３０−３ 5F",
+      "image_src": "https://www.doc.mht-code.com/sweets-app/urthcaffe.jpg"
+    },
+    {
+      "id": 6,
+      "shop_name": "ママタルト",
+      "shop_open_time": "11:30 - 18:00",
+      "shop_phone_no": "03-6335-0143",
+      "shop_address": "東京都世田谷区上野毛1-22-17 1F",
+      "image_src": "https://www.doc.mht-code.com/sweets-app/mama.jpg"
+    },
+    {
+      "id": 7,
+      "shop_name": "GUUUTARA COFFEE",
+      "shop_open_time": "12:00 - 18:00",
+      "shop_phone_no": "-",
+      "shop_address": "東京都世田谷区太子堂4-18-1 エコービル2F",
+      "image_src": "https://www.doc.mht-code.com/sweets-app/gutara.jpg"
+    }
+  ]
+}
