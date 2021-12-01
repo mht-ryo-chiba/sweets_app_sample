@@ -5,7 +5,7 @@ import 'package:sweets_app_sample/ui/atoms/app_size_list.dart';
 import 'package:sweets_app_sample/ui/atoms/app_text_styles.dart';
 import 'package:sweets_app_sample/ui/organisms/comment_detail_widget.dart';
 import 'package:sweets_app_sample/ui/organisms/shop_detail_widget.dart';
-import 'package:sweets_app_sample/viewmodel/shop_detail_view_mode.dart';
+import 'package:sweets_app_sample/viewmodel/shop_detail_view_model.dart';
 
 class ShopDetail extends StatelessWidget {
   const ShopDetail({Key? key, required this.shopDetail}) : super(key: key);
