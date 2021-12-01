@@ -65,6 +65,7 @@ class CommentDetailWidget extends StatelessWidget {
                 child: const Padding(
                   padding: EdgeInsets.only(
                     top: AppSizeList.smallSize,
+                    bottom: AppSizeList.mediumSize,
                   ),
                   child: Text(
                     'Reply',

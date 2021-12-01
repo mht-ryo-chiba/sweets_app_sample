@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:sweets_app_sample/config/app_config.dart';
 import 'package:sweets_app_sample/ui/atoms/app_colors.dart';
 import 'package:sweets_app_sample/ui/organisms/shop_list_widget.dart';
-import 'package:sweets_app_sample/viewmodel/top_view_mode.dart';
+import 'package:sweets_app_sample/viewmodel/top_view_model.dart';
 
 class Top extends StatelessWidget {
   const Top({Key? key}) : super(key: key);
@@ -30,10 +30,11 @@ class Top extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   return ShopListWidget(
                     shopName: viewModel.shopDataList.shopList[index].shopName,
-                    shopAddress:
-                        viewModel.shopDataList.shopList[index].shopAddress,
+                    shopAddress: viewModel.shopDataList.shopList[index].shopAddress,
                     src: viewModel.shopDataList.shopList[index].imageSrc,
-                    tapFunction: () {},
+                    tapFunction: () {
+                      viewModel.toShopDetail(viewModel.shopDataList.shopList[index]);
+                    },
                   );
                 },
               );

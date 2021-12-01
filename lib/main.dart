@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sweets_app_sample/config/app_config.dart';
 import 'package:sweets_app_sample/config/app_routes.dart';
 import 'package:sweets_app_sample/ui/atoms/app_theme.dart';
 import 'package:sweets_app_sample/ui/pages/top.dart';
@@ -16,6 +17,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'sweets_app',
+      // リリースモードの時はデバッグ表示を消す
+      debugShowCheckedModeBanner: !AppConfig().isRelease(),
       theme: AppTheme().style(),
       home: const Top(),
       routes: AppRoutes().routeList(),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sweets_app_sample/config/app_config.dart';
 import 'package:sweets_app_sample/model/route_data_model.dart';
+import 'package:sweets_app_sample/model/shop_model.dart';
+import 'package:sweets_app_sample/ui/pages/shop_detail.dart';
 import 'package:sweets_app_sample/ui/pages/top.dart';
 import 'package:sweets_app_sample/ui/templates/app_colors_template.dart';
 import 'package:sweets_app_sample/ui/templates/app_images_template.dart';
@@ -14,6 +16,13 @@ class AppRoutes {
       pageName: Pages.top.name,
       routeName: Pages.top.routeName,
       widgetBuilder: (BuildContext context) => const Top(),
+    ),
+    RouteDataModel(
+      pageName: Pages.shopDetail.name,
+      routeName: Pages.shopDetail.routeName,
+      widgetBuilder: (BuildContext context) => ShopDetail(
+        shopDetail: ShopModel.fromJson(<String, dynamic>{}),
+      ),
     ),
     // デバッグ用
     RouteDataModel(
@@ -70,6 +79,7 @@ class AppRoutes {
 // 以下ページ一覧設定
 enum Pages {
   top,
+  shopDetail,
   templateTop,
   appColorsTemplate,
   appTextStyleTemplate,
@@ -80,6 +90,7 @@ enum Pages {
 extension PageNameExtension on Pages {
   static final names = {
     Pages.top: 'トップページ',
+    Pages.shopDetail: 'ショップ詳細',
     Pages.templateTop: 'テンプレートトップ',
     Pages.appColorsTemplate: 'カラーテンプレート',
     Pages.appTextStyleTemplate: 'テキストスタイルテンプレート',
@@ -89,6 +100,7 @@ extension PageNameExtension on Pages {
 
   static final rootNames = {
     Pages.top: '/top',
+    Pages.shopDetail: '/shoshopDetail',
     Pages.templateTop: '/templateTop',
     Pages.appColorsTemplate: '/appColorsTemplate',
     Pages.appTextStyleTemplate: '/appTextStyleTemplate',

@@ -1,10 +1,13 @@
 import 'package:get/get.dart';
 import 'package:sweets_app_sample/config/app_routes.dart';
 import 'package:sweets_app_sample/model/shop_list_model.dart';
+import 'package:sweets_app_sample/model/shop_model.dart';
 import 'package:sweets_app_sample/repository/shop_list_repository.dart';
+import 'package:sweets_app_sample/ui/pages/shop_detail.dart';
 
 abstract class TopViewModelInterface extends GetxController {
   Future<void> toTemplate();
+  Future<void> toShopDetail(ShopModel shopDetail);
   ShopListModel get shopDataList;
 }
 
@@ -32,6 +35,11 @@ class TopViewModel extends GetxController implements TopViewModelInterface {
 
   @override
   ShopListModel get shopDataList => _shopDataList;
+
+  @override
+  Future<void> toShopDetail(ShopModel shopDetail) async {
+    await Get.to<void>(ShopDetail(shopDetail: shopDetail));
+  }
 
   @override
   Future<void> toTemplate() async {
