@@ -10,8 +10,8 @@ Atomic Designの考えを用いて作成したflutterアプリケーションで
 * 1ファイルの行数が長くて見づらい
 
 ## Requirement
-* dart 2.14.4
-* Flutter 2.5.3
+* dart 2.15.1
+* Flutter 2.8.1
 
 setup to dart and flutter
 https://flutter.dev/docs/get-started/install
